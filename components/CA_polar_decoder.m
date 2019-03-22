@@ -190,9 +190,9 @@ for list_index = 1:min(L,2^P2)
         % If it passes, remove the CRC and output the information bits.
         a_hat = b_hat(1:end-P);
         return;
-	elseif list_index == 1
-		% If none passes the CRC check, then we choose the first candidate
-		a_hat = b_hat(1:end-P);
+    elseif list_index == 1
+        % If none passes the CRC check, then we choose the first candidate
+        a_hat = b_hat(1:end-P);
     end
 end
 end
